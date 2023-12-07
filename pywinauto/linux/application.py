@@ -115,6 +115,8 @@ class Application(BaseApplication):
         if not connected:
             raise RuntimeError(
                 "You must specify process or handle")
+        else:
+            return self
 
     def cpu_usage(self, interval=None):
         """Return CPU usage percent during specified number of seconds"""
